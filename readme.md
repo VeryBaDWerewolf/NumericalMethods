@@ -10,7 +10,7 @@ Implementation of some numerical methods for laboratory work at the University
 >System of Nonlinear equation
 > * newton
 
->> Integral
+> Integral
 > * rectangle, trapezoid, simpson
 
 Note:
