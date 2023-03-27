@@ -11,6 +11,5 @@ using std::cout;
 using Pair = pair<vector<double>, double>;
 using VPair = pair<vector<double>, int>; 
 
-
 using VecDoub = vector<double>;
 using DoubMatrix = vector<vector<double>>;
