@@ -2,7 +2,8 @@
 
 #include "../utils/sd.h"
 #include "rectangle.h"
-#include "cmath"
+
+#include <cmath>
 
 template<class T>
 pair<double, int> simpson_rule(T &f, double a, double b, double eps){
@@ -14,6 +15,7 @@ pair<double, int> simpson_rule(T &f, double a, double b, double eps){
     double d2x = 0;
 
     while (dltX > eps || n == 1){
+        ans = new_ans = 0;
         dx = (b-a)/n;
         d2x = (b-a)/(2*n);
     for(int i = 0; i < n; i++) {
@@ -28,6 +30,7 @@ pair<double, int> simpson_rule(T &f, double a, double b, double eps){
     }
         n++;
         dltX = fabs(new_ans - ans);
+       
     }
 
     return pair(ans, n);
