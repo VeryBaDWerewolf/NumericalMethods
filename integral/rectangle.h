@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../utils/sd.h"
-#include "cmath"
+#include <cmath>
 
 template<class T>
 pair<double, int> rectangle_rule(T &func, double a, double b, double eps, char type = 'm'){
@@ -40,7 +40,7 @@ pair<double, int> rectangle_rule(T &func, double a, double b, double eps, char t
         for(int i = 0; i<(2*n); i++)
             new_ans+= func(start + i*d2x);
 
-        n++;
+        n*=2;
         dltX = fabs(d2x*new_ans-dx*ans);
     }
         return pair(dx*ans, n);

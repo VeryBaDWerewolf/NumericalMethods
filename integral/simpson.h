@@ -28,7 +28,7 @@ pair<double, int> simpson_rule(T &f, double a, double b, double eps){
         double x2 = a + (i+1)*d2x;
         new_ans += (x2-x1)/6.0*(f(x1) + 4.0*f(0.5*(x1+x2)) + f(x2));
     }
-        n++;
+        n*=2;
         dltX = fabs(new_ans - ans);
        
     }

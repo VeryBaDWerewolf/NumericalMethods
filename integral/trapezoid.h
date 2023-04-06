@@ -2,7 +2,7 @@
 
 #include "../utils/sd.h"
 #include "rectangle.h"
-#include "cmath"
+#include <cmath>
 
 template<class T>
 pair<double, int> trapezoid_rule(T &func, double a, double b, double eps){
